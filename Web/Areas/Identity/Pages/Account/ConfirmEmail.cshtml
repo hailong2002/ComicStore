@@ -1,0 +1,12 @@
+﻿@page
+@model ConfirmEmailModel
+@{
+    ViewData["Title"] = "Confirm email";
+}
+<div class="form-wrapper" style="background-color: rgba(125, 125, 125, 0.9); padding: 20px">
+    <div style="justify-content:center">
+        <h1>@ViewData["Title"]</h1>
+        <partial name="_StatusMessage" model="Model.StatusMessage" />
+        <h6 class="alert alert-success" style="margin-top:-70px"><a asp-area="Identity" asp-page="/Account/Login">Login now</a></h6>
+    </div>  
+</div>

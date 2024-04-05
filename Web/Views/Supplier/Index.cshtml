@@ -1,0 +1,136 @@
+﻿@model IEnumerable<ComicStore.Models.SupplierViewModel>
+@using X.PagedList;
+@using X.PagedList.Mvc.Core;
+@{
+    ViewData["Title"] = "List of suppliers";
+    var index = 0;
+    var currentPage = 1;
+    if (ViewBag.CurrentPage != null) currentPage = ViewBag.CurrentPage;
+}
+
+<div style="margin-left:10px; display: flex">
+    <h3>List of suppliers</h3>
+    @if (User.Identity.IsAuthenticated && User.IsInRole("Manager"))
+    {
+        <a asp-action="Create" id="addBtn"  class="btn btn-success">Add new</a>
+    }
+    <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search" asp-action="Index" asp-controller="Supplier">
+        <div class="input-group">
+            <div style="border: 2px solid #858796; border-radius: 5px 0 0 5px">
+                  <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                   aria-label="Search" aria-describedby="basic-addon2" name="searchText">
+            </div>
+            <div class="input-group-append">
+                <button class="btn btn-primary" type="submit">
+                    <i class="fas fa-search fa-sm"></i>
+                </button>
+            </div>
+        </div>
+    </form>
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown no-arrow d-sm-none">
+            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-search fa-fw"></i>
+            </a>
+            <!-- Dropdown - Messages -->
+            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                 aria-labelledby="searchDropdown">
+                <form class="form-inline mr-auto w-100 navbar-search" asp-action="Index" asp-controller="Supplier">
+                    <div class="input-group">
+                        <div style="background-color:white">
+                            <input type="text" class="form-control bg-light border-0 small"
+                                   placeholder="Search for..." aria-label="Search"
+                                   aria-describedby="basic-addon2">
+                        </div>
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" type="button">
+                                <i class="fas fa-search fa-sm"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </li>
+    </ul>
+   
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>
+                @Html.DisplayNameFor(model => model.SupplierName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Phone)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@(index + 1 +(currentPage -1)*5)</td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SupplierName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Address)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Phone)
+                </td>
+                <td>
+                    <a asp-action="Details" class="btn btn-secondary" asp-route-id="@item.SupplierId"><i class="fa-solid fa-circle-info"></i></a>
+                    @if (User.Identity.IsAuthenticated && User.IsInRole("Manager"))
+                    {
+                        <a asp-action="Edit" class="btn btn-primary" asp-route-id="@item.SupplierId"><i class="fa-solid fa-pen"></i></a>
+                        <a asp-action="Delete" class="btn btn-danger" asp-route-id="@item.SupplierId"><i class="fa-solid fa-trash"></i></a>
+                    }
+                </td>
+            </tr>
+            index++;
+        }
+    </tbody>
+</table>
+<br />
+<div class="pagination">
+    @Html.PagedListPager((IPagedList) Model, page => Url.Action("Index", new {page = page}),
+    new X.PagedList.Web.Common.PagedListRenderOptions {
+    LiElementClasses = new string[] {"page-item"},
+    PageClasses = new string[] { "page-link" }
+    })
+</div>
+
+<style>
+    #addBtn{
+        margin: 0 30px 10px 20px
+    }
+
+    .pagination {
+        margin-left: 530px
+    }
+    @@media (max-width: 576px) {
+        h3 {
+            display: none;
+        }
+
+        #addBtn{
+            margin-left:-10px
+        }
+
+        .table th:nth-child(2), 
+        .table td:nth-child(2){
+            display: none
+        }
+
+        .pagination {
+            margin-left: 0
+        }
+
+</style>

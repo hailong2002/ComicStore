@@ -1,0 +1,58 @@
+﻿@model List<Microsoft.AspNetCore.Identity.IdentityUser>;
+
+@{
+    ViewData["Title"] = "List of users";
+ 
+}
+
+
+<div style="margin-left: 10px; display:flex">
+    <h3>List of @ViewData["Role"]</h3>
+ 
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Phone number</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            var status = "Able";
+            if (item.LockoutEnabled)
+            {
+                status = "Disable";
+            }
+            <tr>
+                <td>@(Model.IndexOf(item)+1)</td>
+                <td>@item.UserName.Substring(0, item.UserName.IndexOf("@"))</td>
+                <td>@item.Email</td>
+                <td>@item.PhoneNumber</td>
+                <td>@status</td>
+                <td>
+                    
+                    @if (item.LockoutEnabled)
+                    {
+                        <form method="post" asp-action="UnlockUser" asp-route-id="@item.Id" asp-route-userRole="@ViewData["Role"]">
+                            <button class="btn btn-success"><i class="fa-solid fa-lock-open"></i></button>
+                        </form>
+                    }
+                    else
+                    {
+                        <form method="post" asp-action="LockUser" asp-route-id="@item.Id" asp-route-userRole="@ViewData["Role"]">
+                            <button class="btn btn-danger"><i class="fa-solid fa-lock"></i></button>
+                        </form>
+                    }
+
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

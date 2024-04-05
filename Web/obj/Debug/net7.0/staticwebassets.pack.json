@@ -1,0 +1,617 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\ComicStore.bundle.scp.css",
+      "PackagePath": "staticwebassets\\ComicStore.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\css\\all.min.css"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\css\\elegant-icons.css",
+      "PackagePath": "staticwebassets\\css\\elegant-icons.css"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\css\\jquery-ui.min.css",
+      "PackagePath": "staticwebassets\\css\\jquery-ui.min.css"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\css\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\css\\magnific-popup.css"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\css\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\css\\owl.carousel.min.css"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\css\\sb-admin-2.min.css",
+      "PackagePath": "staticwebassets\\css\\sb-admin-2.min.css"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\css\\slicknav.min.css",
+      "PackagePath": "staticwebassets\\css\\slicknav.min.css"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\fonts\\ElegantIcons.eot",
+      "PackagePath": "staticwebassets\\fonts\\ElegantIcons.eot"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\fonts\\ElegantIcons.svg",
+      "PackagePath": "staticwebassets\\fonts\\ElegantIcons.svg"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\fonts\\ElegantIcons.ttf",
+      "PackagePath": "staticwebassets\\fonts\\ElegantIcons.ttf"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\fonts\\ElegantIcons.woff",
+      "PackagePath": "staticwebassets\\fonts\\ElegantIcons.woff"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\images\\0569eda4-71be-4716-994d-c89173de0889_image_6483441.jpg",
+      "PackagePath": "staticwebassets\\images\\0569eda4-71be-4716-994d-c89173de0889_image_6483441.jpg"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\images\\0959f43f-a1ed-4789-ad76-f8dfef9c9f43_k1.jfif",
+      "PackagePath": "staticwebassets\\images\\0959f43f-a1ed-4789-ad76-f8dfef9c9f43_k1.jfif"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\images\\0ba1ed83-5c2d-4cfd-af1f-0d914058654a_hike.jpg",
+      "PackagePath": "staticwebassets\\images\\0ba1ed83-5c2d-4cfd-af1f-0d914058654a_hike.jpg"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\images\\0c1cdcf0-7c0e-49d0-a4fb-3c2001ca3116_p14.jpg",
+      "PackagePath": "staticwebassets\\images\\0c1cdcf0-7c0e-49d0-a4fb-3c2001ca3116_p14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\images\\0d24b995-9b6e-4d27-9d13-b820e4650f3e_f3.jpg",
+      "PackagePath": "staticwebassets\\images\\0d24b995-9b6e-4d27-9d13-b820e4650f3e_f3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\images\\194559ed-60c5-4dfc-a1e8-a9c77ca8a6f6_anh-nen-may-tinh-4k-14.jpg",
+      "PackagePath": "staticwebassets\\images\\194559ed-60c5-4dfc-a1e8-a9c77ca8a6f6_anh-nen-may-tinh-4k-14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\images\\1dcc267e-a570-4c09-93a6-e4814ec16077_p7.jpg",
+      "PackagePath": "staticwebassets\\images\\1dcc267e-a570-4c09-93a6-e4814ec16077_p7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\images\\23942c39-452e-4676-81d2-a2b5c1e14bc8_anh-nen-may-tinh-4k-14.jpg",
+      "PackagePath": "staticwebassets\\images\\23942c39-452e-4676-81d2-a2b5c1e14bc8_anh-nen-may-tinh-4k-14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\images\\24f4ed08-0358-4f1e-836f-304182d707e8_f1.jpg",
+      "PackagePath": "staticwebassets\\images\\24f4ed08-0358-4f1e-836f-304182d707e8_f1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\images\\3195b715-afd4-49a5-b5c0-46852d13795c_p9.jpg",
+      "PackagePath": "staticwebassets\\images\\3195b715-afd4-49a5-b5c0-46852d13795c_p9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\images\\348a1d3b-40c2-4b17-86ad-4fd25b960a88_anh-nen-may-tinh-4k-14.jpg",
+      "PackagePath": "staticwebassets\\images\\348a1d3b-40c2-4b17-86ad-4fd25b960a88_anh-nen-may-tinh-4k-14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\images\\3b4882c1-6571-494b-930d-48f9fb46ea64_p10.jpg",
+      "PackagePath": "staticwebassets\\images\\3b4882c1-6571-494b-930d-48f9fb46ea64_p10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\images\\3f3e8d8c-9d66-4de8-8ae1-dd07c34792bb_p8.jpg",
+      "PackagePath": "staticwebassets\\images\\3f3e8d8c-9d66-4de8-8ae1-dd07c34792bb_p8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\images\\3ff9de61-0554-48f4-a296-45273de17392_bggg.jpg",
+      "PackagePath": "staticwebassets\\images\\3ff9de61-0554-48f4-a296-45273de17392_bggg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\images\\6a542252-2902-4086-ab6e-45dc40d353f2_3sao.png",
+      "PackagePath": "staticwebassets\\images\\6a542252-2902-4086-ab6e-45dc40d353f2_3sao.png"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\images\\738d7a6b-616d-4337-888d-ba499cc52438_galio3.png",
+      "PackagePath": "staticwebassets\\images\\738d7a6b-616d-4337-888d-ba499cc52438_galio3.png"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\images\\741ff7a3-dbc9-4454-b098-378b549cb75f_p11.jpg",
+      "PackagePath": "staticwebassets\\images\\741ff7a3-dbc9-4454-b098-378b549cb75f_p11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\images\\7bbb0abf-5360-4b26-838a-20d091ec15f9_beautiful-night-i9neq2ed7blcu74r.jpg",
+      "PackagePath": "staticwebassets\\images\\7bbb0abf-5360-4b26-838a-20d091ec15f9_beautiful-night-i9neq2ed7blcu74r.jpg"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\images\\8baee10c-416d-47c0-9660-f7ecc663d469_3sao.png",
+      "PackagePath": "staticwebassets\\images\\8baee10c-416d-47c0-9660-f7ecc663d469_3sao.png"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\images\\8edbeb98-3a5e-414d-b1a3-4778214ad2e9_p6.jpg",
+      "PackagePath": "staticwebassets\\images\\8edbeb98-3a5e-414d-b1a3-4778214ad2e9_p6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\images\\a4f4c381-e12b-499b-9436-cec7316b0e77_image_6483441.jpg",
+      "PackagePath": "staticwebassets\\images\\a4f4c381-e12b-499b-9436-cec7316b0e77_image_6483441.jpg"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\images\\ae51f678-7c55-43b7-8a2b-4ca19df854be_p12.jpg",
+      "PackagePath": "staticwebassets\\images\\ae51f678-7c55-43b7-8a2b-4ca19df854be_p12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\images\\allpro.jpg",
+      "PackagePath": "staticwebassets\\images\\allpro.jpg"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\images\\b0cb98fe-3a51-45ce-9e08-0914aff2b550_allpro.jpg",
+      "PackagePath": "staticwebassets\\images\\b0cb98fe-3a51-45ce-9e08-0914aff2b550_allpro.jpg"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\images\\b9528f9e-38f6-482a-8010-0f4bc0879c29_image_6483441.jpg",
+      "PackagePath": "staticwebassets\\images\\b9528f9e-38f6-482a-8010-0f4bc0879c29_image_6483441.jpg"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\images\\background.jpg",
+      "PackagePath": "staticwebassets\\images\\background.jpg"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\images\\bg.jpg",
+      "PackagePath": "staticwebassets\\images\\bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\images\\c0fae724-a5f1-4c3d-a09c-0d1b26d729a6_anh-nen-may-tinh-4k-14.jpg",
+      "PackagePath": "staticwebassets\\images\\c0fae724-a5f1-4c3d-a09c-0d1b26d729a6_anh-nen-may-tinh-4k-14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\images\\ce5435ea-4069-4d51-a461-1590bcc86943_p13.jpg",
+      "PackagePath": "staticwebassets\\images\\ce5435ea-4069-4d51-a461-1590bcc86943_p13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\images\\comics.jpg",
+      "PackagePath": "staticwebassets\\images\\comics.jpg"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\images\\cs_logo.png",
+      "PackagePath": "staticwebassets\\images\\cs_logo.png"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\images\\discount.jpg",
+      "PackagePath": "staticwebassets\\images\\discount.jpg"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\images\\f77f40d3-e5e2-464c-a0c5-a876c45f1354_f4.jpg",
+      "PackagePath": "staticwebassets\\images\\f77f40d3-e5e2-464c-a0c5-a876c45f1354_f4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\images\\fece921e-e2df-4490-9f5b-b7dc73b665c3_f2.jpg",
+      "PackagePath": "staticwebassets\\images\\fece921e-e2df-4490-9f5b-b7dc73b665c3_f2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\images\\figures.jfif",
+      "PackagePath": "staticwebassets\\images\\figures.jfif"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\images\\forgotpwd.png",
+      "PackagePath": "staticwebassets\\images\\forgotpwd.png"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\images\\keychain.jfif",
+      "PackagePath": "staticwebassets\\images\\keychain.jfif"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\images\\p1.jfif",
+      "PackagePath": "staticwebassets\\images\\p1.jfif"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\images\\p2.jfif",
+      "PackagePath": "staticwebassets\\images\\p2.jfif"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\images\\p3.jfif",
+      "PackagePath": "staticwebassets\\images\\p3.jfif"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\images\\p4.jpg",
+      "PackagePath": "staticwebassets\\images\\p4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\images\\p5.jfif",
+      "PackagePath": "staticwebassets\\images\\p5.jfif"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\images\\payment-1.png",
+      "PackagePath": "staticwebassets\\images\\payment-1.png"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\images\\payment-2.png",
+      "PackagePath": "staticwebassets\\images\\payment-2.png"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\images\\payment-3.png",
+      "PackagePath": "staticwebassets\\images\\payment-3.png"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\images\\payment-4.png",
+      "PackagePath": "staticwebassets\\images\\payment-4.png"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\images\\payment-5.png",
+      "PackagePath": "staticwebassets\\images\\payment-5.png"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\images\\register.jpg",
+      "PackagePath": "staticwebassets\\images\\register.jpg"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\images\\welcome.png",
+      "PackagePath": "staticwebassets\\images\\welcome.png"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\js\\Chart.min.js",
+      "PackagePath": "staticwebassets\\js\\Chart.min.js"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\js\\chart-area-demo.js",
+      "PackagePath": "staticwebassets\\js\\chart-area-demo.js"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\js\\chart-pie-demo.js",
+      "PackagePath": "staticwebassets\\js\\chart-pie-demo.js"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\js\\jquery-3.3.1.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-3.3.1.min.js"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\js\\jquery-ui.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-ui.min.js"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\js\\jquery.countdown.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.countdown.min.js"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\js\\jquery.easing.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.easing.min.js"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\js\\jquery.magnific-popup.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.magnific-popup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\js\\jquery.min.map",
+      "PackagePath": "staticwebassets\\js\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\js\\jquery.nicescroll.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.nicescroll.min.js"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\js\\jquery.slicknav.js",
+      "PackagePath": "staticwebassets\\js\\jquery.slicknav.js"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\js\\mixitup.min.js",
+      "PackagePath": "staticwebassets\\js\\mixitup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\js\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\js\\owl.carousel.min.js"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\js\\sb-admin-2.min.js",
+      "PackagePath": "staticwebassets\\js\\sb-admin-2.min.js"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\TNT\\Source\\Repos\\Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.ComicStore.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.ComicStore.props",
+      "PackagePath": "build\\ComicStore.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.ComicStore.props",
+      "PackagePath": "buildMultiTargeting\\ComicStore.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.ComicStore.props",
+      "PackagePath": "buildTransitive\\ComicStore.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

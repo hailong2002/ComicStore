@@ -1,0 +1,70 @@
+﻿@model IEnumerable<ComicStore.Models.CategoryViewModel>
+@using X.PagedList;
+@using X.PagedList.Mvc.Core;
+@{
+    ViewData["Title"] = "List of categories";
+    var index = 0;
+    var currentPage = 1;
+    if (ViewBag.CurrentPage != null) currentPage = ViewBag.CurrentPage;
+}
+
+
+<div style="margin-left: 10px; display:flex">
+    <h3 style="margin-right:20px">List of categories</h3>
+    @if (User.Identity.IsAuthenticated && User.IsInRole("Manager"))
+    {
+        <a asp-action="Create" style="margin-bottom:10px" class="btn btn-success">Add new</a>
+    }
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>
+                Name
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>@(index + 1 + (currentPage - 1) * 5)</td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CategoryName)
+            </td>
+            <td>
+                <a asp-action="Details" class="btn btn-secondary" asp-route-id="@item.CategoryId"><i class="fa-solid fa-circle-info"></i></a>
+                @if(User.Identity.IsAuthenticated && User.IsInRole("Manager")){
+                        <a asp-action="Edit" class="btn btn-primary" asp-route-id="@item.CategoryId"><i class="fa-solid fa-pen"></i></a>
+                        <a asp-action="Delete" class="btn btn-danger" asp-route-id="@item.CategoryId"><i class="fa-solid fa-trash"></i></a>
+                }
+            </td>
+        </tr>
+        index++;
+}
+    </tbody>
+</table>
+<br />
+<div  class="pagination">
+    @Html.PagedListPager((IPagedList) Model, page => Url.Action("Index", new {page = page}),
+    new X.PagedList.Web.Common.PagedListRenderOptions {
+    LiElementClasses = new string[] {"page-item"},
+    PageClasses = new string[] { "page-link" }
+    })
+</div>
+
+<style>
+    .pagination {
+        margin-left: 530px
+    }
+    @@media(max-width:576px){
+        h3{
+            display: none
+        }
+
+        .pagination {
+            margin-left: 0
+        }
+    }
+</style>

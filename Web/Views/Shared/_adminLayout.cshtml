@@ -1,0 +1,192 @@
+﻿@using Application;
+
+@inject Application.ICategoryService CategoryService;
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>@ViewData["Title"]</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="~/css/all.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <!-- Custom styles for this template-->
+    <link href="~/css/sb-admin-2.min.css" rel="stylesheet" />
+
+
+</head>
+<body>
+    <main role="main">
+        <div id="wrapper">
+            <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+                <div class="sticky-menu" style="top: 0;position: sticky;">
+                    <!-- Sidebar - Brand -->
+                    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
+                        <div class="sidebar-brand-icon rotate-n-15">
+                            <i class="fas fa-laugh-wink"></i>
+                        </div>
+                        <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+                    </a>
+ 
+                <hr class="sidebar-divider">
+
+                <li class="nav-item">
+                    <a class="nav-link" asp-action="Index" asp-controller="Client">
+                        <i class="fa-solid fa-store"></i>
+                        <span>Back to store</span>
+                    </a>
+                </li>
+
+          
+
+                <!-- Nav Item - Pages Collapse Menu -->
+                    @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#userType"
+                                aria-expanded="true" aria-controls="userType">
+                                <i class="fa-solid fa-user"></i>
+                                <span>Users</span>
+                            </a>
+                            <div id="userType" class="collapse" aria-labelledby="headingUtilities"
+                                    data-parent="#accordionSidebar">
+                                <div class="bg-white py-2 collapse-inner rounded">
+                                    <a class="collapse-item" asp-action="Index" asp-controller="Admin" asp-route-role="Manager">Manager</a>
+                                <a class="collapse-item" asp-action="Index"asp-controller="Admin" asp-route-role="Customer">Customer</a>
+                                </div>
+                            </div>
+                        </li>
+
+                    }
+
+                   
+
+                    @if (User.Identity.IsAuthenticated && (User.IsInRole("Manager") || User.IsInRole("Admin")))
+                    {
+                       
+                        var categories = CategoryService.GetAllCategories();
+                        
+                    <li class="nav-item">
+                        <a class="nav-link collapsed" asp-controller="Product" asp-action="Index" data-toggle="collapse" data-target="#productType"
+                           aria-expanded="true" aria-controls="productType">
+                            <i class="fa-solid fa-database"></i>
+                            <span>Products</span>
+                        </a>
+                        <div id="productType" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                            <div class="bg-white py-2 collapse-inner rounded">
+                                <a class="collapse-item" asp-controller="Product" asp-action="Index">All</a>
+                                    @foreach(var item in categories)
+                                    {
+                                    <a class="collapse-item" asp-controller="Product" asp-action="Index" asp-route-cateName="@item.CategoryName">@item.CategoryName</a>
+                                    }
+                             
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Nav Item - Utilities Collapse Menu -->
+
+                    <li class="nav-item">
+                        <a class="nav-link collapsed" asp-action="Index" asp-controller="Category">
+                            <i class="fa-solid fa-list"></i>
+                            <span>Categories</span>
+                        </a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link collapsed" asp-action="Index" asp-controller="Supplier">
+                            <i class="fa-solid fa-warehouse"></i>
+                            <span>Suppliers</span>
+                        </a>
+
+                    </li>
+                    <hr class="sidebar-divider">
+
+                    }
+                   
+                <!-- Divider -->
+                </div>
+
+            </ul>
+
+                <div id="content-wrapper" class="d-flex flex-column" >
+                <div id="content">
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow" style="position: sticky;top: 0; z-index: 1000; width:100%">
+                        <!-- Sidebar Toggle (Topbar) -->
+                        <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                            <i class="fa fa-bars"></i>
+                        </button>
+
+                        <!-- Topbar Navbar -->
+                        <ul class="navbar-nav ml-auto">
+
+                            <div class="topbar-divider d-none d-sm-block"></div>
+
+                             <partial name="_adminLoginPartial" />
+                        </ul>
+
+                    </nav>
+                    <div style="padding:0 20px">
+                        @RenderBody()
+
+                    </div>
+                <div style="margin-bottom:200px"></div>
+                    <!-- Footer -->
+                    <footer class="sticky-footer bg-white" style="position: absolute; bottom: 0;width: 85.2%;white-space: nowrap;line-height: 60px; margin-top:500px">
+                        <div class="container my-auto">
+                            <div class="copyright text-center my-auto">
+                                <span>Copyright &copy; Your Website 2021</span>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+                </div>
+
+        <a class="scroll-to-top rounded" id="onTopBtn" href="#page-top" onclick="topFunction()">
+                    <i class="fas fa-angle-up"></i>
+            </a>
+
+        <script>
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+
+        </main>
+
+
+    @await RenderSectionAsync("Scripts", required: false)
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="~/js/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="~/js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="~/js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="~/js/chart-area-demo.js"></script>
+    <script src="~/js/chart-pie-demo.js"></script>
+ 
+</body>
+
+</html>

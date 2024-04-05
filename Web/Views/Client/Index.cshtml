@@ -1,0 +1,182 @@
+﻿@model IEnumerable<ComicStore.Models.ProductViewModel>
+@{
+    Layout = "_clientLayout";
+} 
+
+<!-- Page Preloder -->
+<div id="preloder">
+    <div class="loader"></div>
+</div>
+ <!-- Categories Section Begin -->
+    <section class="categories">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 p-0">
+                    <div class="categories__item categories__large__item set-bg"
+                     style="background-image: url(/images/allpro.jpg); " data-setbg="/images/allpro.jpg">
+                    <div class="categories__text" style="background-color: rgb(125,125,125,0.8); padding:20px; color:white; margin-top:150px">
+                        <h1 style="color: white">All products</h1>
+                        <p style="color: white">
+                            We sell products related to comic characters such as comics, figurines, and keychains.
+                           </p>
+                        <a asp-action="Store" style="color: white">Shop now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 p-0">
+                        <div class="categories__item set-bg" style="background-image: url(/images/comics.jpg);" data-setbg="/images/comics.jpg">
+                            <div class="categories__text" style="background-color: rgb(125,125,125,0.8); padding:20px;  margin-top:120px" >
+                                <h4 style="color: white">Comics</h4>
+                                <a style="color: white" asp-action="Store" asp-route-cateName="Comic">Shop now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 p-0">
+                        <div class="categories__item set-bg" style="background-image: url(/images/keychain.jfif);" data-setbg="/images/keychain.jfif">
+                            <div class="categories__text" style="background-color: rgb(125,125,125,0.8); padding:20px;margin-top:120px">
+                                <h4 style="color: white">Keychains</h4>
+                                <a style="color: white" asp-action="Store" asp-route-cateName="Keychain">Shop now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 p-0">
+                        <div class="categories__item set-bg" style="background-image: url(/images/figures.jfif);" data-setbg="/images/figures.jfif">
+                            <div class="categories__text" style="background-color: rgb(125,125,125,0.8); padding:20px">
+                                <h4 style="color: white">Figures</h4>
+                                <a asp-action="Store" asp-route-cateName="Figure" style="color: white">Shop now</a>
+                            </div>
+                        </div>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Categories Section End -->
+
+<!-- Product Section Begin -->
+<section class="product spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4">
+                <div class="section-title">
+                    <h4>New product</h4>
+                </div>
+            </div>
+    
+        </div>
+        <div class="row property__gallery">
+            @foreach(var item in Model){
+                <div class="col-lg-3 col-md-4 col-sm-6 mix women">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="@item.ImagePath">
+                            <div class="label new">New</div>
+                            <ul class="product__hover">
+                                <li><a href="@item.ImagePath" class="image-popup"><span class="arrow_expand"></span></a></li>
+                                @*<li><a href="#"><span class="icon_heart_alt"></span></a></li>*@
+                                <li><a asp-action="ProductDetails" asp-route-id="@item.Id"><span class="icon_bag_alt"></span></a></li>
+                            </ul>
+                        </div>
+                        <div class="product__item__text">
+                            <h6><a asp-action="ProductDetails" asp-route-id="@item.Id">@item.Name</a></h6>
+                            <div class="rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <div class="product__price">$ @item.Price</div>
+                        </div>
+                    </div>
+                </div>
+            }
+            
+        </div>
+    </div>
+</section>
+<!-- Product Section End -->
+
+
+
+<!-- Discount Section Begin -->
+<section class="discount">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 p-0">
+                <div class="discount__pic">
+                    <img src="/images/discount.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 p-0">
+                <div class="discount__text">
+                    <div class="discount__text__title">
+                        <span>Discount</span>
+                        <h2>Summer 2019</h2>
+                        <h5><span>Sale</span> 50%</h5>
+                    </div>
+                    <div class="discount__countdown" id="countdown-time">
+                        <div class="countdown__item">
+                            <span>22</span>
+                            <p>Days</p>
+                        </div>
+                        <div class="countdown__item">
+                            <span>18</span>
+                            <p>Hour</p>
+                        </div>
+                        <div class="countdown__item">
+                            <span>46</span>
+                            <p>Min</p>
+                        </div>
+                        <div class="countdown__item">
+                            <span>05</span>
+                            <p>Sec</p>
+                        </div>
+                    </div>
+                    <a asp-action="Store">Shop now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Discount Section End -->
+
+<!-- Services Section Begin -->
+<section class="services spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="services__item">
+                    <i class="fa fa-car"></i>
+                    <h6>Free Shipping</h6>
+                    <p>For all oder over $99</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="services__item">
+                    <i class="fa fa-money"></i>
+                    <h6>Money Back Guarantee</h6>
+                    <p>If good have Problems</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="services__item">
+                    <i class="fa fa-support"></i>
+                    <h6>Online Support 24/7</h6>
+                    <p>Dedicated support</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="services__item">
+                    <i class="fa fa-headphones"></i>
+                    <h6>Payment Secure</h6>
+                    <p>100% secure payment</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Services Section End -->

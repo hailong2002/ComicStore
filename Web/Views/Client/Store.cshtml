@@ -1,0 +1,184 @@
+﻿@model IEnumerable<ComicStore.Models.ProductViewModel>
+@inject Application.ICategoryService CategoryService;
+@using X.PagedList;
+@using X.PagedList.Mvc.Core;
+@using X.PagedList.Web.Common;
+@{
+    Layout = "_clientLayout";
+    var catgories = CategoryService.GetAllCategories();
+
+    //selected cate
+    var cateSelect = "";
+    if(ViewData["CateName"] != null)
+    {
+        cateSelect = "-" + ViewData["CateName"] as string;
+    }
+
+
+    //pagination
+    int currentPage = (int)ViewData["CurrentPage"] ;
+    int totalPages = (int)ViewData["TotalPages"] ;
+    var prevPage = currentPage > 1 ? currentPage - 1 : 1;
+    var nextPage = currentPage < totalPages ? currentPage + 1 : totalPages;
+
+} 
+
+<style>
+    .cateMenu{
+    color: black
+    }
+
+    .cateMenu:hover{
+    color: red;
+    }
+
+</style>
+
+<!-- Page Preloder -->
+<div id="preloder">
+    <div class="loader"></div>
+</div>
+
+<!-- Breadcrumb Begin -->
+<div class="breadcrumb-option">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb__links">
+                    <a asp-action="Index"><i class="fa fa-home"></i> Home</a>
+                    <span>Store</span><span>@cateSelect</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Breadcrumb End -->
+<!-- Shop Section Begin -->
+<section class="shop spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3">
+                <div class="shop__sidebar">
+                    <div class="sidebar__categories">
+                        <div class="section-title">
+                            <h4>Categories</h4>
+                        </div>
+                        <div class="categories__accordion">
+                            <div class="accordion" id="accordionExample">
+                                <div class="card">
+                                    <div>
+                                        <a   class="cateMenu" asp-action="Store" asp-controller="Client">All products</a>
+                                    </div>
+                                  
+                                </div>
+                               
+                                @foreach (var category in catgories)
+                                {
+                                    <div class="card">
+                                        <div>
+                                            <a class="cateMenu" asp-action="Store" asp-controller="Client" asp-route-cateName="@category.CategoryName">@category.CategoryName</a>
+                                        </div>
+                                    </div>
+                                }
+                               
+                          
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-bottom:30px">
+                        <div class="section-title">
+                            <h4>Sort by</h4>
+                        </div>
+                        <div style="display:flex; margin-top:-20px">
+                            <select class="form-control" onchange="location = this.value;" style="width:100px">
+                                <option value="">Price</option>
+                                <option value="@Url.Action("Store", new { cateName = ViewData["CateName"], sortType = "priceIncrease" })">Increase</option>
+                                <option value="@Url.Action("Store", new { cateName = ViewData["CateName"], sortType = "priceDecrease" })">Decrease</option>
+                            </select>
+                            <div style="margin-right:10px"></div>
+                            <select class="form-control" onchange="location = this.value;" style="width:100px">
+                                <option value="">Name</option>
+                                <option value="@Url.Action("Store", new { cateName = ViewData["CateName"], sortType = "nameIncrease" })">A -> Z</option>
+                                <option value="@Url.Action("Store", new { cateName = ViewData["CateName"], sortType = "nameDecrease" })">Z -> A</option>
+                            </select>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="sidebar__filter">
+                        <div class="section-title">
+                            <h4>Filter by price</h4>
+                        </div>
+                        <form asp-action="Store" asp-route-cateName="@ViewData["CateName"]" asp-route-searchName="@ViewData["SearchName"]">
+                        <div class="filter-range-wrap" style="margin-top:-25px">
+                        @*    <div class="price-range ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content"
+                                     data-min="0" data-max="999"></div>*@
+                            <div class="range-slider">
+                                <div class="price-input">
+                                    <p>Price: </p>
+                                        $ <input type="number" name="minPrice" id="minamount">
+                                        $ <input type="number" name="maxPrice" id="maxamount">
+                                        <button type="submit" class="btn btn-danger">Filter</button>
+
+                                </div>
+                            </div>
+                        </div>
+                        
+                        </form>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-9">
+                <div class="row">
+                    @foreach (var item in Model)
+                    {
+                        <div class="col-lg-4 col-md-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" style="background-image:url(@item.ImagePath)" data-setbg=@item.ImagePath>
+                                    
+                                    <ul class="product__hover">
+                                        <li><a href="@item.ImagePath" class="image-popup"><span class="arrow_expand"></span></a></li>
+                                        @*<li><a href="#"><span class="icon_heart_alt"></span></a></li>*@
+                                        <li><a asp-action="ProductDetails" asp-route-id="@item.Id"><span class="icon_bag_alt"></span></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6><a href="#">@item.Name</a></h6>
+                                  
+                                    <div class="product__price">$ @item.Price</div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+                  
+
+                    <div class="col-lg-12 text-center">
+                        <div class="pagination__option">
+                            @if (currentPage > 1)
+                            {
+                                <a href="@Url.Action("Store", new { page = prevPage, cateName = ViewData["CateName"], searchName=ViewData["SearchName"] , sortType = ViewData["SortType"]})" ><i class="fa fa-angle-left"></i></a>
+                            }
+                            @for (int i = 1; i <= totalPages; i++)
+                            {
+                                string style = i == currentPage ? "color: white;background:black" : "";
+                                <a style="@style"  href="@Url.Action("Store", new { page = i, cateName = ViewData["CateName"], searchName=ViewData["SearchName"], sortType = ViewData["SortType"]})">@i</a>
+                            }
+                 
+                            @if (currentPage < totalPages)
+                            {
+                                <a href="@Url.Action("Store", new { page = nextPage, cateName = ViewData["CateName"],searchName=ViewData["SearchName"], sortType = ViewData["SortType"]})"><i class="fa fa-angle-right"></i></a>
+                            }
+                           
+                            
+                        </div>
+                    </div>
+          
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+

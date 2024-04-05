@@ -1,0 +1,95 @@
+﻿@model ComicStore.Models.ProductViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+    int currentPage = 1;
+    if (ViewBag.CurrentPage != null) currentPage = ViewBag.CurrentPage;
+
+
+}
+<div style="padding:5px 15px">
+    <h3>Edit product information</h3>
+
+    <hr />
+    <div class="row">
+
+        <div class="col-md-12">
+            <form asp-action="Edit"  enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" name="page" value="@currentPage" />
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label asp-for="Name" class="control-label"></label>
+                            <input asp-for="Name" class="form-control" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Description" class="control-label"></label>
+                            <input asp-for="Description" class="form-control" />
+                            <span asp-validation-for="Description" class="text-danger"></span>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-sm-6">
+                                <label asp-for="Price" class="control-label"></label>
+                                <input asp-for="Price" class="form-control" />
+                                <span asp-validation-for="Price" class="text-danger"></span>
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label asp-for="Quantity" class="control-label"></label>
+                                <input asp-for="Quantity" class="form-control" />
+                                <span asp-validation-for="Quantity" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label asp-for="Image" class="control-label">Image</label>
+                            <input asp-for="Image" class="form-control" type="file"/>
+                            <span asp-validation-for="Image" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="control-label">Select a brand:</label><br />
+                            <select asp-for="Brand" class="form-control">
+                                <option value="Marvel">Marvel</option>
+                                <option value="DC">DC</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                      
+                        <div class="form-group">
+                            <label class="control-label">Category</label>
+                            <select asp-for="CategoryId" class="form-control" asp-items="ViewBag.CategoryId"></select>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Supplier</label>
+                            <select asp-for="SupplierId" class="form-control" asp-items="ViewBag.SupplierId"></select>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Preview image</label><br />
+                            <img src="@Model.ImagePath" width="100" />
+                            <input type="hidden" asp-for="ImagePath" value="@Model.ImagePath" />
+                        </div>
+                    </div>
+
+                </div>
+                <br />
+
+                <div class="form-group">
+                    <input type="submit" asp-route-categoryName="@ViewData["CateName"]" value="Edit" class="btn btn-primary" />
+                    <a asp-action="Index" asp-route-page="@currentPage" class="btn btn-secondary" asp-route-cateName="@ViewData["CateName"]">Cancel</a>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+
+
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
