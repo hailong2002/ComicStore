@@ -62,6 +62,8 @@ namespace ComicStore.Controllers
                 ViewData["TotalPages"] = (int)Math.Ceiling((double)listProducts.Count() / 9);
                 ViewData["CurrentPage"] = page != null ? page : 1;
                 ViewData["SearchName"] = searchName;
+                ViewBag.MinPrice = minPrice;
+                ViewBag.MaxPrice = maxPrice;
                 if (cateName != null) ViewData["CateName"] = cateName;
                 return View(listProducts.ToPagedList(page ?? 1, 9));
             }

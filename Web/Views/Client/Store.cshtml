@@ -158,17 +158,17 @@
                         <div class="pagination__option">
                             @if (currentPage > 1)
                             {
-                                <a href="@Url.Action("Store", new { page = prevPage, cateName = ViewData["CateName"], searchName=ViewData["SearchName"] , sortType = ViewData["SortType"]})" ><i class="fa fa-angle-left"></i></a>
+                                <a href="@Url.Action("Store", new { page = prevPage, cateName = ViewData["CateName"], searchName=ViewData["SearchName"] , sortType = ViewData["SortType"], minPrice=ViewBag.MinPrice, maxPrice = ViewBag.MaxPrice})" ><i class="fa fa-angle-left"></i></a>
                             }
                             @for (int i = 1; i <= totalPages; i++)
                             {
                                 string style = i == currentPage ? "color: white;background:black" : "";
-                                <a style="@style"  href="@Url.Action("Store", new { page = i, cateName = ViewData["CateName"], searchName=ViewData["SearchName"], sortType = ViewData["SortType"]})">@i</a>
+                                <a style="@style"  href="@Url.Action("Store", new { page = i, cateName = ViewData["CateName"], searchName=ViewData["SearchName"], sortType = ViewData["SortType"],minPrice=ViewBag.MinPrice, maxPrice = ViewBag.MaxPrice})">@i</a>
                             }
                  
                             @if (currentPage < totalPages)
                             {
-                                <a href="@Url.Action("Store", new { page = nextPage, cateName = ViewData["CateName"],searchName=ViewData["SearchName"], sortType = ViewData["SortType"]})"><i class="fa fa-angle-right"></i></a>
+                                <a href="@Url.Action("Store", new { page = nextPage, cateName = ViewData["CateName"],searchName=ViewData["SearchName"], sortType = ViewData["SortType"],minPrice=ViewBag.MinPrice, maxPrice = ViewBag.MaxPrice})"><i class="fa fa-angle-right"></i></a>
                             }
                            
                             
