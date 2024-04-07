@@ -73,6 +73,10 @@ namespace Application.Services
         public List<Product> SortProductByPrice(double? minPrice, double? maxPrice, string? cateName, string? name)
         {
             var products = _repository.GetAllProducts(cateName, name);
+            if (minPrice == null && maxPrice != null)
+                return products.Where(p => p.Price <= maxPrice).ToList();
+            if (minPrice != null && maxPrice == null)
+                return products.Where(p => p.Price >= minPrice).ToList();
             return products.Where(p => p.Price <= maxPrice && p.Price >= minPrice).ToList();
         }
 
